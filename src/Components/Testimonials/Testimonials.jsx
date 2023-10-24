@@ -3,6 +3,7 @@ import './Testimonials.css'
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import images from '../../../Image_Imports/imageImports-collections';
 
 const Testimonials = () => {
     const reviews = [
@@ -10,49 +11,49 @@ const Testimonials = () => {
             name: "Marta Dominguez",
             country: "Spain",
             state: " Andalusia",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-1.jpg",
+            imgSrc: images.person1,
             text: "Being a jewelry enthusiast, I've seen and owned my fair share of pieces, but Vivienne's is in a league of its own. Every piece feels like it's crafted with passion, telling a story of its own."
         },
         {
             name: "Clara Montgomery",
             country: "USA",
             state: " Massachusetts",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-2.jpg",
+            imgSrc: images.person2,
             text: "I can't express how much I adore the designs at Vivienne's. The jewelry pieces are not only incredibly elegant, but each one feels special and unique."
         },
         {
             name: "Emilia Gustafsson",
             country: "Sweden",
             state: " Västra Götaland",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-3.jpg",
+            imgSrc: images.person3,
             text: "Every piece from Vivienne's exudes charm and elegance. The quality, the design, the finish, everything is just top-notch."
         },
         {
             name: "Fiona O'Sullivan",
             country: "Ireland",
             state: " Cork",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-4.jpg",
+            imgSrc: images.person4,
             text: "Right from the sheer quality of their pieces to the design aesthetics, everything screams luxury and taste."
         },
         {
             name: "Amélie Dubois",
             country: "France",
             state: " Provence",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-5.jpg",
+            imgSrc: images.person5,
             text: "Shopping for jewelry has always been a cherished pastime, and discovering Vivienne's was like striking gold. Their collection beautifully marries sophistication with modernity."
         },
         {
             name: "Lena Schmidt",
             country: "Germany",
             state: " Bavaria",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-6.jpg",
+            imgSrc: images.person6,
             text: "Their attention to detail, commitment to quality, and the beautiful narrative behind each piece make them my go-to jewelry destination."
         },
         {
             name: "Chiara Bianchi",
             country: "Italy",
             state: " Tuscany",
-            imgSrc: "../../../Content/Homepage/Testimonials/person-7.jpg",
+            imgSrc: images.person7,
             text: "Vivienne's is the epitome of elegance in the world of jewelry. Their pieces have this uncanny ability to resonate with your personality."
         }
     ];

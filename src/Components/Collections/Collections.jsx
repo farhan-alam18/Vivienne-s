@@ -1,26 +1,26 @@
 import React from 'react';
-import './Collections.css'
+import './Collections.css';
+import images from '../../../Image_Imports/imageImports-collections';
+ 
 
 const Collections = () => {
-    const images = [
-        { imgSrc: '../../../Content/Homepage/Image-178.png', text: "Luna Reflection Earring" },
-        { imgSrc: '../../../Content/Homepage/Image-179.png', text: "Turquoise Teardrop Lariat" },
-        { imgSrc: '../../../Content/Homepage/Image-180.png', text: "Oceanic Pearl Medley Necklace" },
-        { imgSrc: '../../../Content/Homepage/Image-181.png', text: "Rosaline Braided Bloom Ring" },
-        { imgSrc: '../../../Content/Homepage/Image-182.png', text: "Silken Twist Earring" },
-        { imgSrc: '../../../Content/Homepage/Image-183.png', text: "Diamond Oval Elegance Ring" },
-        { imgSrc: '../../../Content/Homepage/Image-184.png', text: "Saffron Square Majesty Ring" },
-        { imgSrc: '../../../Content/Homepage/Image-185.png', text: "Cerulean Leaflet Earclip" },
-        { imgSrc: '../../../Content/Homepage/Image-186.png', text: "Gilded Grace Piercing" }
+    const Images = [
+        { imgSrc: images.image178, text: "Luna Reflection Earring" },
+        { imgSrc: images.image179, text: "Turquoise Teardrop Lariat" },
+        { imgSrc: images.image180, text: "Oceanic Pearl Medley Necklace" },
+        { imgSrc: images.image181, text: "Rosaline Braided Bloom Ring" },
+        { imgSrc: images.image182, text: "Silken Twist Earring" },
+        { imgSrc: images.image183, text: "Diamond Oval Elegance Ring" },
+        { imgSrc: images.image184, text: "Saffron Square Majesty Ring" },
+        { imgSrc: images.image185, text: "Cerulean Leaflet Earclip" },
+        { imgSrc: images.image186, text: "Gilded Grace Piercing" }
     ];
     
-
-
     return (
         <div className="collections">
             <p>Our Collections</p>
             <div className="grid-container">
-                {images.map((image, index) => (
+                {Images.map((image, index) => (
                     <div key={index} className="grid-item">
                         <div className="image-container">
                             <img src={image.imgSrc} alt="User" />
@@ -34,4 +34,4 @@ const Collections = () => {
     );
 }
 
-export default Collections
+export default Collections;
