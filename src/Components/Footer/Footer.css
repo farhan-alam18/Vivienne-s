@@ -1,0 +1,142 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13rem;
+    padding-right: 15rem;
+    gap: 5px;
+    background-color: var(--dark-green);
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.footer-heading {
+    color: var(--yellow);
+    font-family: 'Marney';
+    font-size: 2.5rem;
+    margin: auto 0;
+}
+.footer-text {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-text > .footer-text-1 {
+    margin: auto;
+    margin-left: 6rem;
+    font-family: var(--font-heading);
+    color: whitesmoke;
+}
+
+.footer-text-1 > a, 
+.footer-text-2 > a {
+    text-decoration: none;  /* Remove underline for anchor tags */
+    margin: 6px;
+    display: block;         /* This makes the anchor tags behave like block-level elements, similar to p tags */
+}
+
+.footer-text > .footer-text-2 {
+    margin: auto;
+    margin-right: 5rem;
+    font-family: var(--font-heading);
+    color: whitesmoke;
+}
+
+
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 15px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.newsletter-heading {
+    font-family: 'Marney';
+    color: whitesmoke;
+    font-size: 1.7rem;
+}
+
+.input-container>button {
+    background-color: var(--yellow);
+    margin: 0.7rem;
+    margin-top: -5px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+input {
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    z-index: 0;
+    transition: border-color 0.3s;
+    margin-top: -10px;
+    background-color: var(--dark-green);
+
+}
+
+input::placeholder {
+    color: whitesmoke;
+    font-family: var(--font-heading);
+}
+
+.input-container> input:focus {
+    outline: none;
+    padding-left: 60px;
+    color:whitesmoke;
+    font-family: var(--font-heading);
+}
+
+.newsletter-text{
+    font-family: var(--font-heading);
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+@media screen and (max-width:426px) {
+    footer{
+        /* border: 2px solid red; */
+        flex-direction: column;
+        /* padding-top: rem; */
+        padding: 0;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .footer-text-1{
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .footer-heading{
+        margin: 0 auto;
+        /* display: none; */
+        margin-bottom: 1rem;
+    }
+    .newsletter-heading{
+        padding-top: 2rem;
+        padding-bottom: 0.4rem;
+    }
+    .newsletter-text{
+        padding-bottom: 10px;
+    }
+    .input-icon{
+        margin-top: -4px;
+    }
+    .input-container > button{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
